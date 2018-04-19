@@ -6,10 +6,25 @@ client.on("ready", () => {
     console.log("I am ready!");
 });
 
+
+
+
 client.on("message", (message) => {
-    if (message.content.startsWith("ping")) {
-        message.channel.send("pong!");
-    }
+
+    const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+    const command = args.shift().toLowerCase();
+
+    if (!message.content.startsWith(config.prefix)) return;
+    else{
+
+        if (command == "ping") {
+            message.channel.send("pong!");
+        }
+
+    };
+
+
+
 });
 
 client.on("guildMemberAdd", (member) => {

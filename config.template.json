@@ -1,0 +1,16 @@
+{
+  "token": "",
+  "prefix": "!",
+  "channels": {
+    "general": "",
+    "roles": "",
+    "rules": "",
+    "lobby": "",
+    "mod": ""
+  },
+  "roles": {
+    "mods": "",
+    "members": ""
+  },
+  "userRoles": []
+}

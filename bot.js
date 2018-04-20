@@ -23,6 +23,8 @@ client.on("message", (message) => {
             let role = message.guild.roles.find("name", config.roles.members);
             let member = message.mentions.members.first();
             member.addRole(role).catch(console.error);
+            let nick = member.displayName;
+            member.setNickname("Comrade " + nick);
             message.guild.channels.get(config.channels.general).send(`Welcome to the commune, ${member}! Please take a look at our <#${config.channels.rules}> and feel free to request pronoun roles and nsfw access in <#${config.channels.roles}>.`);
         }
 
@@ -85,7 +87,7 @@ client.on("message", (message) => {
 
                     if (args[1] && message.guild.roles.find("name", args[1])) {
                         let role = message.guild.roles.find("name", args[1]);
-                        var index = conf.userRoles.indexOf(role.name);
+                        let index = conf.userRoles.indexOf(role.name);
                         if (index !== -1) {
                             conf.userRoles.splice(index, 1);
                         }

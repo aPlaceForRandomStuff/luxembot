@@ -48,7 +48,7 @@ In this section, you'll need to get the ids for each channel specified.
 ```
 These are the names of the mod role and the member role. Currently all role related functionality of this bot is case sensitive.
 
-For more information on initializing a Discord Bot, including how to add it into a server, see: 
+For more information on initializing a Discord Bot, including how to get your token and add it into a server, see: 
  
 [https://anidiotsguide_old.gitbooks.io/discord-js-bot-guide/content/getting-started/the-long-version](https://anidiotsguide_old.gitbooks.io/discord-js-bot-guide/content/getting-started/the-long-version.html)
  

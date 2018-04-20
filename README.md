@@ -18,7 +18,8 @@ You will need to create a config.json file to store the bot token for this bot. 
  
 [https://anidiotsguide_old.gitbooks.io/discord-js-bot-guide/content/getting-started/the-long-version](https://anidiotsguide_old.gitbooks.io/discord-js-bot-guide/content/getting-started/the-long-version.html)
  
-After you've got your bot permissions set up, bring it to live with `node bot.js`
+After you've got your bot permissions set up, bring it to life with `node bot.js`
 
+Your config.json file will also hold channel ids for certain channels as well as the names of your member and mod roles.
 
     Sowidawity Fowevew

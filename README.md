@@ -3,8 +3,8 @@ This is a bot that makes live easier for the NKVD of the Furfag Commune Discord 
 
 ## Current Features:
 * **New User Alerts:** The bot pings @NKVD when a new user joins and makes them aware of the vetting process.
-* **Quick Add** Typing `!add @user` assigns the member role and points out the Roles and Rules channels.
-* **User Role Setting** Server members can set roles specified by the mods.
+* **Quick Add:** Typing `!add @user` assigns the member role and points out the Roles and Rules channels.
+* **User Role Setting:** Server members can set roles specified by the mods.
 
 ## Requirements
 You'll need Node Package Manager installed on your machine to work on this bot.

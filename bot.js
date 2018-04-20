@@ -19,7 +19,7 @@ client.on("message", (message) => {
     if (!message.content.startsWith(config.prefix)) return;
     else {
 
-        if (command == "add" && message.member.roles.find("name", config.roles.mods)) {
+        if (command == "add" && message.member.roles.find("name", config.roles.mods) && message.channel.id == config.channels.lobby) {
             let role = message.guild.roles.find("name", config.roles.members);
             let member = message.mentions.members.first();
             member.addRole(role).catch(console.error);

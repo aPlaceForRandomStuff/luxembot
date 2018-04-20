@@ -14,7 +14,7 @@ https://www.npmjs.com/get-npm
 ## Set Up:
 After cloning the repository, run `npm install` inside the repo directory to install dependencies. 
 
-###Configuration
+### Configuration
 
 Duplicate `config.template.json` as `config.json` and fill it in as follows:  
 

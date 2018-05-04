@@ -54,8 +54,11 @@ fabric.properties
 .idea/httpRequests
 
 
-#Node
+# Node
 node_modules/
 
 # Bot Config Files (contains secret keys)
 config.json
+
+# ESLint
+.eslintrc.json

@@ -114,7 +114,7 @@ client.on("message", (message) => {
 });
 
 client.on("guildMemberAdd", (member) => { //Ping NKVD when a new user joins. This uses backticks because i Had template literals at first and now I'm too lazy to fix it.
-    member.guild.channels.get(config.channels.lobby).send(`Welcome, <@` + member.user.id + `>. An agent of the ` + member.guild.roles.find("name", config.roles.mods) + ` will be with you soon to ask you a few vetting questions.`)
+    member.guild.channels.get(config.channels.lobby).send(`Welcome, <@` + member.user.id + `>. An agent of the <@` + config.roles.mods + `> will be with you soon to ask you a few vetting questions.`)
 
 });
 

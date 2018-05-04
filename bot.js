@@ -19,9 +19,9 @@ client.on("message", (message) => {
     if (!message.content.startsWith(config.prefix)) return; //This ignores chat input that does not begin with the bot prefix
     else {
 
-        if (command == "add" && message.member.roles.find("name", config.roles.mods) && message.channel.id == config.channels.lobby) { //Making sure that only mods can run the !add command
+        if (command == "add" && message.member.roles.find("id", config.roles.mods) && message.channel.id == config.channels.lobby) { //Making sure that only mods can run the !add command
             //Add the mentioned user to the member role, change their nickname, and ping them with a welcome message
-            let role = message.guild.roles.find("name", config.roles.members);
+            let role = message.guild.roles.find("id", config.roles.members);
             let member = message.mentions.members.first();
             member.addRole(role).catch(console.error);
             let nick = member.displayName;
